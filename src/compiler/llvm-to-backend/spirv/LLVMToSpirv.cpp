@@ -59,7 +59,7 @@ void appendIntelLLVMSpirvOptions(llvm::SmallVector<std::string>& out) {
       "-spirv-allow-extra-diexpressions",
       "-spirv-allow-unknown-intrinsics=llvm.genx.",
       "-spirv-ext=-all,+SPV_EXT_shader_atomic_float_add,+SPV_EXT_shader_atomic_float_min_max,+SPV_"
-      "KHR_no_integer_wrap_decoration,+SPV_KHR_float_controls,+SPV_KHR_expect_assume,+SPV_INTEL_"
+      "KHR_no_integer_wrap_decoration,+SPV_KHR_float_controls,+SPV_INTEL_"
       "subgroups,+SPV_INTEL_media_block_io,+SPV_INTEL_device_side_avc_motion_estimation,+SPV_INTEL_"
       "fpga_loop_controls,+SPV_INTEL_fpga_memory_attributes,+SPV_INTEL_fpga_memory_accesses,+SPV_"
       "INTEL_unstructured_loop_controls,+SPV_INTEL_fpga_reg,+SPV_INTEL_blocking_pipes,+SPV_INTEL_"
@@ -68,11 +68,11 @@ void appendIntelLLVMSpirvOptions(llvm::SmallVector<std::string>& out) {
       "vector_compute,+SPV_INTEL_fast_composite,+SPV_INTEL_fpga_buffer_location,+SPV_INTEL_joint_"
       "matrix,+SPV_INTEL_arbitrary_precision_fixed_point,+SPV_INTEL_arbitrary_precision_floating_"
       "point,+SPV_INTEL_arbitrary_precision_floating_point,+SPV_INTEL_variable_length_array,+SPV_"
-      "INTEL_fp_fast_math_mode,+SPV_INTEL_fpga_cluster_attributes,+SPV_INTEL_loop_fuse,+"
+      "INTEL_fpga_cluster_attributes,+SPV_INTEL_loop_fuse,+"
       SPIRV_INTEL_LONG_CONSTANT_EXT_NAME ",+SPV_INTEL_fpga_invocation_pipelining_attributes,+SPV_INTEL_fpga_"
       "dsp_control,+SPV_INTEL_arithmetic_fence,+SPV_INTEL_runtime_aligned,"
       "+SPV_INTEL_optnone,+SPV_INTEL_token_type,+SPV_INTEL_bfloat16_conversion,+SPV_INTEL_joint_"
-      "matrix,+SPV_INTEL_hw_thread_queries,+SPV_INTEL_memory_access_aliasing,+SPV_EXT_relaxed_printf_string_address_space"
+      "matrix,+SPV_INTEL_hw_thread_queries,+SPV_EXT_relaxed_printf_string_address_space"
   };
   for(const auto& S : Args) {
     out.push_back(S);
